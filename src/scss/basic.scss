@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap');
+
+
+p {
+  margin: 0;
+}
+
+.box {
+  max-width: 500px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 16px 0px rgba(18, 28, 45, 0.20);
+  border-radius: 4px;
+  background: #FFF;
+  padding: 16px 16px 0 16px;
+  margin: 0 auto;
+
+  .box_fix {
+    display: flex;
+    justify-content: space-between;
+
+    .box_back {
+      display: flex;
+      gap: 5px;
+    }
+
+    .box_edit {
+      display: flex;
+      gap: 5px;
+    }
+
+    p {
+      color: #0263E0;
+      text-align: center;
+      font-variant-numeric: lining-nums tabular-nums;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: 'Inter';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px;
+    }
+  }
+
+  .box_account {
+    padding: 10px;
+    margin-top: 16px;
+
+    .box_head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        color: #121C2D;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        margin: 0;
+      }
+
+      .box_social {
+        display: flex;
+        gap: 12px;
+
+        .tel {
+          border-radius: 100px;
+          border: 1px solid var(--border-color-border, #8891AA);
+          background: var(--background-color-background-body, #FFF);
+          cursor: pointer;
+        }
+
+        .message {
+          border-radius: 100px;
+          border: 1px solid var(--border-color-border, #8891AA);
+          background: var(--background-color-background-body, #FFF);
+          cursor: pointer;
+        }
+
+        .email {
+          border-radius: 100px;
+          border: 1px solid var(--border-color-border, #8891AA);
+          background: var(--background-color-background-body, #FFF);
+          cursor: pointer;
+        }
+
+      }
+    }
+
+    .box_contact {
+      margin-top: 16px;
+
+      .box_lead {
+        width: 65px;
+        display: flex;
+        gap: 4px;
+        padding: 4px 8px;
+        border-radius: 8px;
+        background: #EBF4FF;
+
+        p {
+          color: #001489;
+          text-align: center;
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 16px;
+
+        }
+      }
+    }
+
+  }
+
+  .tabs {
+    h1 {
+      margin: 0;
+    }
+
+    .box_tabs {
+      h1 {
+        margin: 0;
+      }
+
+      h4 {
+        margin: 0;
+      }
+
+      .box_info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        max-width: 487px;
+
+        .box_lastname {
+          width: 100px;
+        }
+      }
+
+      .box_info1 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        max-width: 487px;
+
+        .box_email {
+          max-width: 100px;
+        }
+      }
+
+      .box_info2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 487px;
+
+        .box_benefit {
+          width: 100px;
+
+          h4 {
+            margin-top: 20px;
+          }
+        }
+      }
+
+      .box_info3 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        max-width: 487px;
+
+        .box_acc {
+          width: 100px;
+        }
+
+        .box_id {
+          margin-left: 60px;
+          width: 100px;
+
+        }
+      }
+    }
+
+    .lead {
+      margin-top: 16px;
+    }
+
+    .box_lead {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+      max-width: 487px;
+      margin-bottom: 25px;
+
+      h4 {
+        margin: 0;
+      }
+
+      .box_state {
+        display: flex;
+        gap: 5px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 415px) {
+  .box {
+    .tabs {
+      .box_tabs {
+        .box_info {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .box_info1 {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .box_info2 {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin-top: 20px;
+        }
+
+        .box_info3 {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      .box_lead {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
