@@ -1,4 +1,5 @@
 import { Checkbox } from "antd";
+import "../scss/basic.scss";
 
 const InfoPage = () => {
   return (
